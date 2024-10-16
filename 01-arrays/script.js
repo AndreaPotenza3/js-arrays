@@ -10,11 +10,11 @@ const teachers = [
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = (teachers.indexOf(4));
+const fourthTeacher = teachers.at(3);
 console.log(fourthTeacher)
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
-teachers.at()
+teachers[4] = "Patrick"
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = "Luca";
@@ -46,8 +46,9 @@ console.log(findFabio)
 
 // 8. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
-const lewis = teachers.at(-2)
+const lewisIndex = 5;
+const lewis = teachers.indexOf("Lewis")
+console.log(lewis)
  
 
 // 9. Unisci tutti gli insegnanti nell'array teachers in una stringa
@@ -58,3 +59,4 @@ console.log(teachers.join())
 // 10. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 const isTeachersEmpty = null;
+console.log(teachers.length)
